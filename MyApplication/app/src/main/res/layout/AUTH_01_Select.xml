@@ -5,15 +5,74 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#202020"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Select type of user"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFf"
+        app:layout_constraintBottom_toTopOf="@id/buttonRow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/titleDivider"
+        android:layout_width="300dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="12dp"
+        app:dividerColor="#CCCCCC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <LinearLayout
+        android:id="@+id/buttonRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleDivider"
+        android:layout_marginTop="24dp">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEmployee"
+            android:layout_width="0dp"
+            android:layout_height="280dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:contextClickable="false"
+            android:text="Employee"
+            android:textAllCaps="false"
+            app:backgroundTint="#757575"
+            app:cornerRadius="20"
+            app:icon="@drawable/baseline_person_24"
+            app:iconGravity="textTop"
+            app:iconSize="100dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bnManager"
+            android:layout_width="0dp"
+            android:layout_height="280dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:contextClickable="false"
+            android:text="Manager"
+            app:backgroundTint="#757575"
+            app:cornerRadius="20"
+            app:icon="@drawable/baseline_manage_accounts_24"
+            app:iconGravity="textTop"
+            app:iconSize="100dp" />
+
+    </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
