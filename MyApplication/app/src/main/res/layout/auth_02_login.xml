@@ -66,10 +66,10 @@
         android:layout_height="43dp"
         android:layout_weight="1"
         android:contextClickable="false"
-        android:text="<-"
+        android:text="←"
         android:textAllCaps="false"
         app:backgroundTint="#757575"
-        app:cornerRadius="20"
+        app:cornerRadius="20dp"
 
         tools:layout_editor_absoluteX="32dp"
         tools:layout_editor_absoluteY="325dp" />

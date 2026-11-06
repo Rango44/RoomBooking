@@ -14,10 +14,10 @@
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="36dp"
-        android:text="<-"
+        android:text="←"
         android:textAllCaps="false"
         app:backgroundTint="#757575"
-        app:cornerRadius="20"
+        app:cornerRadius="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,7 +30,7 @@
         android:contextClickable="false"
         android:textAllCaps="false"
         app:backgroundTint="#757575"
-        app:cornerRadius="20"
+        app:cornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
@@ -63,7 +63,7 @@
             android:text="Search"
             android:textAllCaps="false"
             app:backgroundTint="#757575"
-            app:cornerRadius="20"
+            app:cornerRadius="20dp"
             app:icon="@drawable/outline_category_search_24"
             app:iconGravity="textTop"
             app:iconSize="100dp" />
@@ -77,7 +77,7 @@
             android:contextClickable="false"
             android:text="View requests"
             app:backgroundTint="#757575"
-            app:cornerRadius="20"
+            app:cornerRadius="20dp"
             app:icon="@drawable/outline_book_24"
             app:iconGravity="textTop"
             app:iconSize="100dp" />

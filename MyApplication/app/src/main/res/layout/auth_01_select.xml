@@ -52,7 +52,7 @@
             android:text="Employee"
             android:textAllCaps="false"
             app:backgroundTint="#757575"
-            app:cornerRadius="20"
+            app:cornerRadius="20dp"
             app:icon="@drawable/baseline_person_24"
             app:iconGravity="textTop"
             app:iconSize="100dp" />
@@ -66,7 +66,7 @@
             android:contextClickable="false"
             android:text="Manager"
             app:backgroundTint="#757575"
-            app:cornerRadius="20"
+            app:cornerRadius="20dp"
             app:icon="@drawable/baseline_manage_accounts_24"
             app:iconGravity="textTop"
             app:iconSize="100dp" />

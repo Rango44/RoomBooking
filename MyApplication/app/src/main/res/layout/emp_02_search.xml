@@ -37,10 +37,10 @@
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="36dp"
-        android:text="<-"
+        android:text="←"
         android:textAllCaps="false"
         app:backgroundTint="#757575"
-        app:cornerRadius="20"
+        app:cornerRadius="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -53,7 +53,7 @@
         android:contextClickable="false"
         android:textAllCaps="false"
         app:backgroundTint="#757575"
-        app:cornerRadius="20"
+        app:cornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
@@ -84,7 +84,7 @@
             android:text="Charles seminar room \n \n Occupancy: 4"
             android:textAllCaps="false"
             app:backgroundTint="#757575"
-            app:cornerRadius="20"
+            app:cornerRadius="20dp"
             app:icon="@drawable/outline_display_group_24"
             app:iconGravity="textTop"
             app:iconSize="100dp" />
@@ -98,7 +98,7 @@
             android:contextClickable="false"
             android:text="Levinsky Seminar Room \n \n Occupancy: 8"
             app:backgroundTint="#757575"
-            app:cornerRadius="20"
+            app:cornerRadius="20dp"
             app:icon="@drawable/outline_display_group_24"
             app:iconGravity="textTop"
             app:iconSize="100dp" />
@@ -159,7 +159,7 @@
             android:text="Rolle \n Occupancy: 4"
             android:textAllCaps="false"
             app:backgroundTint="#757575"
-            app:cornerRadius="20"
+            app:cornerRadius="20dp"
             app:icon="@drawable/outline_diversity_3_24"
             app:iconGravity="textTop"
             app:iconSize="100dp" />
@@ -174,7 +174,7 @@
             android:contextClickable="false"
             android:text="Babbage\n Occupancy: 2"
             app:backgroundTint="#757575"
-            app:cornerRadius="20"
+            app:cornerRadius="20dp"
             app:icon="@drawable/outline_diversity_3_24"
             app:iconGravity="textTop"
             app:iconSize="100dp" />
@@ -190,7 +190,7 @@
             android:text="Smeaton\n Occupancy: 6"
             android:textAllCaps="false"
             app:backgroundTint="#757575"
-            app:cornerRadius="20"
+            app:cornerRadius="20dp"
             app:icon="@drawable/outline_diversity_3_24"
             app:iconGravity="textTop"
             app:iconSize="100dp" />
@@ -205,7 +205,7 @@
             android:contextClickable="false"
             android:text="Library\n Occupancy: 10"
             app:backgroundTint="#757575"
-            app:cornerRadius="20"
+            app:cornerRadius="20dp"
             app:icon="@drawable/outline_diversity_3_24"
             app:iconGravity="textTop"
             app:iconSize="100dp" />
@@ -221,7 +221,7 @@
             android:contextClickable="false"
             android:text="Portland \n Occupancy: 4"
             app:backgroundTint="#757575"
-            app:cornerRadius="20"
+            app:cornerRadius="20dp"
             app:icon="@drawable/outline_diversity_3_24"
             app:iconGravity="textTop"
             app:iconSize="100dp" />
