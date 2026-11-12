@@ -58,7 +58,7 @@
             app:iconSize="100dp" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/bnManager"
+            android:id="@+id/btnManager"
             android:layout_width="0dp"
             android:layout_height="280dp"
             android:layout_marginStart="8dp"
