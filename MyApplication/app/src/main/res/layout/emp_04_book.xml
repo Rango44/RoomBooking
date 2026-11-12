@@ -146,7 +146,7 @@
         android:layout_height="40dp"
         android:layout_weight="1"
         android:contextClickable="false"
-        android:text="Book"
+        android:text="Confirm Booking"
         android:textAllCaps="false"
         app:backgroundTint="#757575"
         app:cornerRadius="20dp"

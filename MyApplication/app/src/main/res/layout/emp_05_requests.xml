@@ -68,7 +68,7 @@
         android:layout_height="40dp"
         android:layout_weight="1"
         android:contextClickable="false"
-        android:text="Cancel"
+        android:text="Request cancellation"
         android:textAllCaps="false"
         app:backgroundTint="#757575"
         app:cornerRadius="20dp"

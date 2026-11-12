@@ -1,6 +1,8 @@
 package com.example.roombookingapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +17,62 @@ public class emp_02_search extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.emp_02_search);
+
+        Button btnBack = findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(v -> {
+            finish();
+        });
+
+        Button btnAccount = findViewById(R.id.btnAccount);
+        btnAccount.setOnClickListener(v -> {
+            finish();
+        });
+
+        Button btnSem1 = findViewById(R.id.btnSem1);
+        btnSem1.setOnClickListener(v -> {
+            Intent intent = new Intent(this, emp_03_room.class);
+            startActivity(intent);
+        });
+
+        Button btnSem2 = findViewById(R.id.btnSem2);
+        btnSem2.setOnClickListener(v -> {
+            Intent intent = new Intent(this, emp_03_room.class);
+            startActivity(intent);
+        });
+
+
+        Button btnMeet1 = findViewById(R.id.btnMeet1);
+        btnMeet1.setOnClickListener(v -> {
+            Intent intent = new Intent(this, emp_03_room.class);
+            startActivity(intent);
+        });
+
+        Button btnMeet2 = findViewById(R.id.btnMeet2);
+        btnMeet2.setOnClickListener(v -> {
+            Intent intent = new Intent(this, emp_03_room.class);
+            startActivity(intent);
+        });
+
+
+        Button btnMeet3 = findViewById(R.id.btnMeet3);
+        btnMeet3.setOnClickListener(v -> {
+            Intent intent = new Intent(this, emp_03_room.class);
+            startActivity(intent);
+        });
+
+        Button btnMeet4 = findViewById(R.id.btnMeet4);
+        btnMeet4.setOnClickListener(v -> {
+            Intent intent = new Intent(this, emp_03_room.class);
+            startActivity(intent);
+        });
+
+        Button btnMeet5 = findViewById(R.id.btnMeet5);
+        btnMeet5.setOnClickListener(v -> {
+            Intent intent = new Intent(this, emp_03_room.class);
+            startActivity(intent);
+        });
+
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
