@@ -43,13 +43,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:text="Room Type | Room name | Date input"
+        android:text="Room name | Room Type"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFf"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnBack" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDateInput"
+        android:layout_width="@id/titleDivider"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Date"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#757575"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@id/titleDivider"
+        app:layout_constraintStart_toStartOf="@id/titleDivider"
+        app:layout_constraintTop_toBottomOf="@id/titleDivider" />
 
     <com.google.android.material.divider.MaterialDivider
         android:id="@+id/titleDivider"
@@ -60,6 +73,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/titleDivider2"
+        android:layout_width="300dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="12dp"
+        app:dividerColor="#CCCCCC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnDateInput" />
+
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnBook"

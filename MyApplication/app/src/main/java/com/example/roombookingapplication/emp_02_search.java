@@ -12,6 +12,10 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class emp_02_search extends AppCompatActivity {
 
+    private String roomType;
+    private String roomName;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,45 +34,73 @@ public class emp_02_search extends AppCompatActivity {
 
         Button btnSem1 = findViewById(R.id.btnSem1);
         btnSem1.setOnClickListener(v -> {
+            roomType = "Seminar room";
+            roomName = "Charles";
             Intent intent = new Intent(this, emp_03_room.class);
+            intent.putExtra("roomType", roomType);
+            intent.putExtra("roomName", roomName);
             startActivity(intent);
         });
 
         Button btnSem2 = findViewById(R.id.btnSem2);
         btnSem2.setOnClickListener(v -> {
+            roomType = "Seminar room";
+            roomName = "Levinsky";
             Intent intent = new Intent(this, emp_03_room.class);
+            intent.putExtra("roomType", roomType);
+            intent.putExtra("roomName", roomName);
             startActivity(intent);
         });
 
 
         Button btnMeet1 = findViewById(R.id.btnMeet1);
         btnMeet1.setOnClickListener(v -> {
+            roomType = "Meeting room";
+            roomName = "Rolle";
             Intent intent = new Intent(this, emp_03_room.class);
+            intent.putExtra("roomType", roomType);
+            intent.putExtra("roomName", roomName);
             startActivity(intent);
         });
 
         Button btnMeet2 = findViewById(R.id.btnMeet2);
         btnMeet2.setOnClickListener(v -> {
+            roomType = "Meeting room";
+            roomName = "Babbage";
             Intent intent = new Intent(this, emp_03_room.class);
+            intent.putExtra("roomType", roomType);
+            intent.putExtra("roomName", roomName);
             startActivity(intent);
         });
 
 
         Button btnMeet3 = findViewById(R.id.btnMeet3);
         btnMeet3.setOnClickListener(v -> {
+            roomType = "Meeting room";
+            roomName = "Smeaton";
             Intent intent = new Intent(this, emp_03_room.class);
+            intent.putExtra("roomType", roomType);
+            intent.putExtra("roomName", roomName);
             startActivity(intent);
         });
 
         Button btnMeet4 = findViewById(R.id.btnMeet4);
         btnMeet4.setOnClickListener(v -> {
+            roomType = "Meeting room";
+            roomName = "Library";
             Intent intent = new Intent(this, emp_03_room.class);
+            intent.putExtra("roomType", roomType);
+            intent.putExtra("roomName", roomName);
             startActivity(intent);
         });
 
         Button btnMeet5 = findViewById(R.id.btnMeet5);
         btnMeet5.setOnClickListener(v -> {
+            roomType = "Meeting room";
+            roomName = "Portland";
             Intent intent = new Intent(this, emp_03_room.class);
+            intent.putExtra("roomType", roomType);
+            intent.putExtra("roomName", roomName);
             startActivity(intent);
         });
 
