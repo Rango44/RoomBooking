@@ -14,7 +14,10 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.DialogFragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 
 public class emp_03_room extends AppCompatActivity {
@@ -67,6 +70,23 @@ public class emp_03_room extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        ArrayList<TimeSlot> timeSlots = new ArrayList<>();
+        timeSlots.add(new TimeSlot("8:00 - 9:00", false));
+        timeSlots.add(new TimeSlot("9:00 - 10:00", true));
+        timeSlots.add(new TimeSlot("10:00 - 11:00", false));
+        timeSlots.add(new TimeSlot("11:00 - 12:00", false));
+        timeSlots.add(new TimeSlot("12:00 - 13:00", true));
+        timeSlots.add(new TimeSlot("13:00 - 14:00", false));
+        timeSlots.add(new TimeSlot("14:00 - 15:00", false));
+        timeSlots.add(new TimeSlot("15:00 - 16:00", false));
+        timeSlots.add(new TimeSlot("16:00 - 17:00", true));
+        timeSlots.add(new TimeSlot("17:00 - 18:00", false));
+
+
+        RecyclerView timeSlotView = findViewById(R.id.timeSlotView);
+        timeSlotView.setLayoutManager(new LinearLayoutManager(this));
+        timeSlotView.setAdapter(new TimeSlotAdapter(timeSlots));
     }
 
     public static class DatePickerFragment extends DialogFragment
@@ -88,6 +108,8 @@ public class emp_03_room extends AppCompatActivity {
             Button btnDateInput = getActivity().findViewById(R.id.btnDateInput);
             btnDateInput.setText(day + "/" + (month + 1) + "/" + year);
         }
+
+
     }
 
 }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSlotItem"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginVertical="4dp"
+        android:layout_marginHorizontal="30dp"
+
+        app:backgroundTint="#757575"
+        app:cornerRadius="6dp" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+
+
+        android:text="time"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@id/btnSlotItem"
+        app:layout_constraintStart_toStartOf="@id/btnSlotItem"
+        app:layout_constraintTop_toTopOf="@id/btnSlotItem" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:paddingEnd="60dp"
+        android:text="status"
+        android:textColor="#FFFFFF"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="@id/btnSlotItem"
+        app:layout_constraintBottom_toBottomOf="@id/btnSlotItem"
+        app:layout_constraintEnd_toEndOf="@id/btnSlotItem" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

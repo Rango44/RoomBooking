@@ -84,6 +84,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnDateInput" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/timeSlotView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintTop_toBottomOf="@id/titleDivider2"
+        app:layout_constraintBottom_toTopOf="@id/btnBook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnBook"
